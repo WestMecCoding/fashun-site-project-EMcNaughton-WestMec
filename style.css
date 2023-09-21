@@ -1,0 +1,233 @@
+/* 
+    Resoulutions:
+    766x1023
+    1278x783
+    1919x1348 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100vw
+}
+
+#logo h1 {
+    font-family: 'Playfair';
+    overflow: hidden;
+    text-align: center;
+    font-weight: 100;
+    font-size: 5vw;
+}
+
+header nav a {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Playfair';
+    font-size: 2vw;
+    width: 0px;
+    margin: 0px;
+    color: black;
+    margin-left: 15.5vw;
+    white-space: nowrap;
+}
+
+nav {
+    position: absolute;
+    width: 54vw;
+    top: 3.5vh;
+    right: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    div#splash-image {
+        background-image: url('./768_assets/fashun_banner_768.png');
+        background-size: cover;
+        width: 100vw;
+        height: 26vh;
+        background-position: top left;
+    }
+    div#product:has(.shirt,.shoe) {
+        display: block;
+        width: 75vw;
+        height: 22vh;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background: linear-gradient(to bottom right, orange 10%, white 50%);
+        margin-top: 7vh;
+        
+    }
+    div#product div {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    div#product div.shirt {
+        background-image: url('768_assets/fashun_jacket_768.png');
+        width: 50%;
+        height: 100%;
+    }
+    div#product div.shoe {
+        background-image: url('768_assets/fashun_shoe_768.png');
+        width: 59%;
+        height: 100%;
+    }
+    div#product .hat {
+        display: none;
+    }
+    div#product p {
+        margin-top: 1vh;
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: 'merriweather';
+        font-weight: 0;
+    }
+    #menu {
+        background-image: url('768_assets/Hamburger_menu.png');
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0.5vw;
+        right: 3vw;
+        width: 10vw;
+        height: 10vw;
+    }
+    #logo h1 {
+        margin-top: 1vh;
+        font-size: 8vw;
+        margin-bottom: 2vh;
+    }
+    header nav a {
+        font-size: 0px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    div#splash-image {
+        background-image: url('./1280_assets/fashun_banner_1280.png');
+        background-size: cover;
+        width: 100vw;
+        height: 50vh;
+        background-position: center center;
+    }
+    div#product:has(.shoe,.hat) {
+        justify-content: center;
+        white-space: nowrap;
+        width: 50vw;
+        height: 25vh;
+        float: left;
+        margin-top: 5vh;
+    }
+    div#product .shirt {
+        display: none;
+    }
+    div#product div.shoe {
+        background-image: url('./1280_assets/fashun_shoe_1280.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    div#product div.hat {
+        background-image: url('./1280_assets/fashun_hat_1280.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    div#product p{
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    #logo h1 {
+        text-align: left;
+        margin-left: 7.6vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    div#splash-image {
+        background-image: url('./1920_assets/fashun_banner_1920.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 50vh;
+        background-position: center center;
+    }
+    div#product {
+        justify-content: center;
+        white-space: nowrap;
+        width: 33.333333vw;
+        height: 25vh;
+        float: left;
+        margin-top: 5vh;
+    }
+    div#product div.shirt {
+        background-image: url('./1920_assets/brown_jacket_600.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    div#product div.shoe {
+        background-image: url('./1920_assets/cool_shoe_600.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    div#product div.hat {
+        background-image: url('./1920_assets/fall_hat_600.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    div#product p{
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    #logo h1 {
+        text-align: left;
+        margin-left: 12vw;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        font-size: 3vw;
+    }
+    header nav a {
+        font-size: 1.5vw;
+    }
+    nav {
+        top: 3vh;
+    }
+}
+
+#logo {
+    width: 100vw;
+}
+
+header {}
+
+header nav {}
